@@ -1166,3 +1166,132 @@ textarea.form-input {
   position: absolute;
   width: .1rem;
 }
+
+/* line 476, ../src/style.scss */
+.form-checkbox,
+.form-radio {
+  padding: .2rem 2rem;
+}
+
+/* line 480, ../src/style.scss */
+.form-switch {
+  padding: .2rem 2rem .2rem 3.6rem;
+}
+
+/* line 483, ../src/style.scss */
+.input-group {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+/* line 489, ../src/style.scss */
+.input-group .input-group-addon {
+  background: #f8f9fa;
+  border: .1rem solid #c4c9d3;
+  border-radius: .2rem;
+  line-height: 2rem;
+  padding: .5rem .8rem;
+}
+
+/* line 497, ../src/style.scss */
+.input-group .input-group-addon.addon-sm {
+  font-size: 1.2rem;
+  padding: .1rem .8rem;
+}
+
+/* line 501, ../src/style.scss */
+.input-group .input-group-addon.addon-lg {
+  font-size: 1.6rem;
+  padding: .9rem .8rem;
+}
+
+/* line 505, ../src/style.scss */
+.input-group .input-group-addon,
+.input-group .input-group-btn {
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+/* line 511, ../src/style.scss */
+.input-group .form-input:first-child:not(:last-child),
+.input-group .form-select:first-child:not(:last-child),
+.input-group .input-group-addon:first-child:not(:last-child),
+.input-group .input-group-btn:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 518, ../src/style.scss */
+.input-group .form-input:not(:first-child):not(:last-child),
+.input-group .form-select:not(:first-child):not(:last-child),
+.input-group .input-group-addon:not(:first-child):not(:last-child),
+.input-group .input-group-btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  margin-left: -.1rem;
+}
+
+/* line 525, ../src/style.scss */
+.input-group .form-input:last-child:not(:first-child),
+.input-group .form-select:last-child:not(:first-child),
+.input-group .input-group-addon:last-child:not(:first-child),
+.input-group .input-group-btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -.1rem;
+}
+
+/* line 533, ../src/style.scss */
+.input-group .form-input:focus,
+.input-group .form-select:focus,
+.input-group .input-group-addon:focus,
+.input-group .input-group-btn:focus {
+  z-index: 1;
+}
+
+/* line 539, ../src/style.scss */
+.input-group .form-select {
+  width: auto;
+}
+
+/* line 542, ../src/style.scss */
+.input-group.input-inline {
+  display: inline-flex;
+  display: -ms-inline-flexbox;
+  display: -webkit-inline-flex;
+}
+
+/* line 547, ../src/style.scss */
+.form-input:disabled,
+.form-select:disabled,
+.form-input.disabled,
+.form-select.disabled {
+  background-color: #f0f1f4;
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+/* line 555, ../src/style.scss */
+.form-input[readonly] {
+  background-color: #f8f9fa;
+}
+
+/* line 558, ../src/style.scss */
+.form-horizontal {
+  padding: 1rem;
+}
+
+/* line 561, ../src/style.scss */
+.form-horizontal .form-group {
+  display: flex;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+}
+
+/* line 566, ../src/style.scss */
+.form-horizontal .form-checkbox,
+.form-horizontal .form-radio,
+.form-horizontal .form-switch {
+  margin: .4rem 0;
+}
