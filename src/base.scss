@@ -1,0 +1,167 @@
+@import "../base/normalize";
+@import "../base/color";
+
+/**=======================================================================================================
+*
+*
+*==========================================================================================================*/
+
+[hidden] {
+  display: none;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html{
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: $fontBlackColor;
+  background-color: $backgroundWhiteColor;
+
+  text-rendering: optimizeLegibility;
+}
+a{
+  color: $fontDarkColor;
+  outline: none;
+  text-decoration: none;
+}
+a:focus{
+  -webkit-box-shadow: 0 0 0 .2rem $buttonActiveColor;
+  -moz-box-shadow: 0 0 0 .2rem $buttonActiveColor;
+  box-shadow: 0 0 0 .2rem $buttonActiveColor;
+}
+a:focus,
+a:hover,
+a:active,
+a.active{
+  color: $fontActiveColor;
+  text-decoration: underline;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+h4 {
+  font-size: 2.4rem;
+}
+h5 {
+  font-size: 2rem;
+}
+h6 {
+  font-size: 1.6rem;
+}
+p{
+  line-height: 2.4rem;
+  margin: 0 0 1rem;
+}
+a,
+ins,
+u{
+  -webkit-text-decoration-skip: ink edges;
+  text-decoration-skip: ink edges;
+}
+blockquote{
+  border-left: .2rem solid #f0f1f4;
+  margin-left: 0;
+  padding: 1rem 2rem;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+blockquote cite {
+  color: #acb3c2;
+}
+ul,
+ol{
+  margin: 2rem 0 2rem 2rem;
+  padding: 0;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+  margin: 1.5rem 0 1.5rem 2rem;
+}
+ul li,
+ol li{
+  margin-top: 1rem;
+}
+ul {
+  list-style: disc inside;
+}
+ul ul {
+  list-style-type: circle;
+}
+ol {
+  list-style: decimal inside;
+}
+ol ol {
+  list-style-type: lower-alpha;
+}
+dl dt {
+  font-weight: bold;
+}
+dl dd {
+  margin: .5rem 0 1.5rem 0;
+}
+mark {
+  background: $backgroundColor;
+  border-radius: .2rem;
+  color: $fontMarkColor;
+  display: inline-block;
+  line-height: 1;
+  padding: .3rem .4rem;
+  vertical-align: baseline;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.text-nowrap {
+  white-space: nowrap;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
