@@ -690,51 +690,7 @@ mark {
   vertical-align: baseline;
 }
 
-/* line 144, ../src/base.scss */
-.text-left {
-  text-align: left;
-}
-
-/* line 147, ../src/base.scss */
-.text-right {
-  text-align: right;
-}
-
-/* line 150, ../src/base.scss */
-.text-center {
-  text-align: center;
-}
-
-/* line 153, ../src/base.scss */
-.text-justify {
-  text-align: justify;
-}
-
-/* line 156, ../src/base.scss */
-.text-nowrap {
-  white-space: nowrap;
-}
-
-/* line 159, ../src/base.scss */
-.text-lowercase {
-  text-transform: lowercase;
-}
-
-/* line 162, ../src/base.scss */
-.text-uppercase {
-  text-transform: uppercase;
-}
-
-/* line 165, ../src/base.scss */
-.text-capitalize {
-  text-transform: capitalize;
-}
-
-/**=============================================================================================================
- *
- *
- =============================================================================================================*/
-/* line 8, ../src/grid.scss */
+/* line 145, ../src/base.scss */
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -742,17 +698,110 @@ mark {
   padding-right: 1rem;
   width: 100%;
 }
-/* line 14, ../src/grid.scss */
+/* line 151, ../src/base.scss */
 .container:before, .container:after {
   clear: both;
   content: "";
   display: table;
 }
-/* line 19, ../src/grid.scss */
+
+/* line 158, ../src/base.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 161, ../src/base.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 164, ../src/base.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 167, ../src/base.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* line 170, ../src/base.scss */
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* line 173, ../src/base.scss */
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+/* line 176, ../src/base.scss */
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* line 179, ../src/base.scss */
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+/* line 183, ../src/base.scss */
+.loading {
+  color: transparent !important;
+  min-height: 1.6rem;
+  pointer-events: none;
+  position: relative;
+}
+
+/* line 189, ../src/base.scss */
+.loading::after {
+  -webkit-animation: loading 500ms infinite linear;
+  animation: loading 500ms infinite linear;
+  border: .2rem solid #5764c6;
+  border-radius: .8rem;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  content: "";
+  display: block;
+  height: 1.6rem;
+  left: 50%;
+  margin-left: -.8rem;
+  margin-top: -.8rem;
+  position: absolute;
+  top: 50%;
+  width: 1.6rem;
+  z-index: 1;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+/**=============================================================================================================
+ *
+ *
+ =============================================================================================================*/
+/* line 9, ../src/grid.scss */
 .container .row {
   padding: 0 1rem;
 }
-/* line 20, ../src/grid.scss */
+/* line 10, ../src/grid.scss */
 .container .row:before, .container .row:after {
   clear: both;
   content: "";
@@ -760,79 +809,101 @@ mark {
 }
 
 @media (min-width: 768px) {
-  /* line 29, ../src/grid.scss */
+  /* line 19, ../src/grid.scss */
   .container {
     max-width: 60rem;
   }
 }
 @media (min-width: 992px) {
-  /* line 34, ../src/grid.scss */
+  /* line 24, ../src/grid.scss */
   .container {
     max-width: 98rem;
   }
 }
 @media (min-width: 1200px) {
-  /* line 39, ../src/grid.scss */
+  /* line 29, ../src/grid.scss */
   .container {
     max-width: 130rem;
   }
 }
-/* line 44, ../src/grid.scss */
+/* line 33, ../src/grid.scss */
+.column {
+  padding: 0 .8rem;
+  max-width: 100%;
+}
+
+/* line 37, ../src/grid.scss */
+.col-12,
+.col-11,
+.col-10,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2,
+.col-1 {
+  float: left;
+}
+
+/* line 51, ../src/grid.scss */
 .col-12 {
   width: 100%;
 }
 
-/* line 47, ../src/grid.scss */
+/* line 54, ../src/grid.scss */
 .col-11 {
   width: 91.66666667%;
 }
 
-/* line 50, ../src/grid.scss */
+/* line 57, ../src/grid.scss */
 .col-10 {
   width: 83.33333333%;
 }
 
-/* line 53, ../src/grid.scss */
+/* line 60, ../src/grid.scss */
 .col-9 {
   width: 75%;
 }
 
-/* line 56, ../src/grid.scss */
+/* line 63, ../src/grid.scss */
 .col-8 {
   width: 66.66666667%;
 }
 
-/* line 59, ../src/grid.scss */
+/* line 66, ../src/grid.scss */
 .col-7 {
   width: 58.33333333%;
 }
 
-/* line 62, ../src/grid.scss */
+/* line 69, ../src/grid.scss */
 .col-6 {
   width: 50%;
 }
 
-/* line 65, ../src/grid.scss */
+/* line 72, ../src/grid.scss */
 .col-5 {
   width: 41.66666667%;
 }
 
-/* line 68, ../src/grid.scss */
+/* line 75, ../src/grid.scss */
 .col-4 {
   width: 33.33333333%;
 }
 
-/* line 71, ../src/grid.scss */
+/* line 78, ../src/grid.scss */
 .col-3 {
   width: 25%;
 }
 
-/* line 74, ../src/grid.scss */
+/* line 81, ../src/grid.scss */
 .col-2 {
   width: 16.66666667%;
 }
 
-/* line 77, ../src/grid.scss */
+/* line 84, ../src/grid.scss */
 .col-1 {
   width: 8.33333333%;
 }

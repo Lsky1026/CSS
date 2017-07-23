@@ -6,16 +6,6 @@
  =============================================================================================================*/
 
 .container{
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  width: 100%;
-  &:before,&:after{
-    clear: both;
-    content: "";
-    display: table;
-  }
   .row{
     &:before,&:after{
       clear: both;
@@ -40,7 +30,24 @@
     max-width: 130rem;
   }
 }
-
+.column{
+  padding: 0 .8rem;
+  max-width: 100%;
+}
+.col-12,
+.col-11,
+.col-10,
+.col-9,
+.col-8,
+.col-7,
+.col-6,
+.col-5,
+.col-4,
+.col-3,
+.col-2,
+.col-1{
+  float: left;
+}
 .col-12 {
   width: 100%;
 }
