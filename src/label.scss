@@ -1,0 +1,26 @@
+@import "base";
+
+.container{
+  span.label,small.label{
+    display: inline-block;
+    background-color: $buttonActiveColor;
+    color: #fff;
+    border-radius: .2rem;
+    line-height: 1.42857143;
+    padding: .2rem .4rem;
+    vertical-align: baseline;
+  }
+  span.label.label-success,small.label.label-success{
+    background: #32b643;
+    color: #fff;
+  }
+  span.label.label-warning,small.label.label-warning{
+    background: #ffb700;
+    color: #fff;
+  }
+  span.label.label-error,small.label.label-error{
+    background: #e85600;
+    color: #fff;
+  }
+}
+

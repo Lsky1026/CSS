@@ -846,64 +846,65 @@ mark {
 .col-2,
 .col-1 {
   float: left;
+  min-height: 1px;
 }
 
-/* line 51, ../src/grid.scss */
+/* line 52, ../src/grid.scss */
 .col-12 {
   width: 100%;
 }
 
-/* line 54, ../src/grid.scss */
+/* line 55, ../src/grid.scss */
 .col-11 {
   width: 91.66666667%;
 }
 
-/* line 57, ../src/grid.scss */
+/* line 58, ../src/grid.scss */
 .col-10 {
   width: 83.33333333%;
 }
 
-/* line 60, ../src/grid.scss */
+/* line 61, ../src/grid.scss */
 .col-9 {
   width: 75%;
 }
 
-/* line 63, ../src/grid.scss */
+/* line 64, ../src/grid.scss */
 .col-8 {
   width: 66.66666667%;
 }
 
-/* line 66, ../src/grid.scss */
+/* line 67, ../src/grid.scss */
 .col-7 {
   width: 58.33333333%;
 }
 
-/* line 69, ../src/grid.scss */
+/* line 70, ../src/grid.scss */
 .col-6 {
   width: 50%;
 }
 
-/* line 72, ../src/grid.scss */
+/* line 73, ../src/grid.scss */
 .col-5 {
   width: 41.66666667%;
 }
 
-/* line 75, ../src/grid.scss */
+/* line 76, ../src/grid.scss */
 .col-4 {
   width: 33.33333333%;
 }
 
-/* line 78, ../src/grid.scss */
+/* line 79, ../src/grid.scss */
 .col-3 {
   width: 25%;
 }
 
-/* line 81, ../src/grid.scss */
+/* line 82, ../src/grid.scss */
 .col-2 {
   width: 16.66666667%;
 }
 
-/* line 84, ../src/grid.scss */
+/* line 85, ../src/grid.scss */
 .col-1 {
   width: 8.33333333%;
 }
@@ -1023,4 +1024,66 @@ mark {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-left: -.1rem;
+}
+
+/* line 4, ../src/table.scss */
+.container .table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+  max-width: 100%;
+  position: relative;
+  display: block;
+}
+/* line 13, ../src/table.scss */
+.container .table tbody tr:nth-of-type(odd) {
+  background: #f8f9fa;
+}
+/* line 16, ../src/table.scss */
+.container .table tbody tr:hover {
+  background: #f0f1f4;
+}
+/* line 19, ../src/table.scss */
+.container .table tbody tr,
+.container .table tbody tr {
+  background: #f0f1f4;
+}
+/* line 23, ../src/table.scss */
+.container .table td {
+  margin: 0;
+  border-bottom: 0.1rem solid #f3f3f3;
+  padding: 1.5rem 1rem;
+}
+/* line 28, ../src/table.scss */
+.container .table th {
+  margin: 0;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.2);
+  padding: 1.5rem 1rem;
+}
+
+/* line 4, ../src/label.scss */
+.container span.label, .container small.label {
+  display: inline-block;
+  background-color: #00AAEE;
+  color: #fff;
+  border-radius: .2rem;
+  line-height: 1.42857143;
+  padding: .2rem .4rem;
+  vertical-align: baseline;
+}
+/* line 13, ../src/label.scss */
+.container span.label.label-success, .container small.label.label-success {
+  background: #32b643;
+  color: #fff;
+}
+/* line 17, ../src/label.scss */
+.container span.label.label-warning, .container small.label.label-warning {
+  background: #ffb700;
+  color: #fff;
+}
+/* line 21, ../src/label.scss */
+.container span.label.label-error, .container small.label.label-error {
+  background: #e85600;
+  color: #fff;
 }

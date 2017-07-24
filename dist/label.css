@@ -793,118 +793,28 @@ mark {
     transform: rotate(360deg);
   }
 }
-/**=============================================================================================================
- *
- *
- =============================================================================================================*/
-/* line 9, ../src/grid.scss */
-.container .row {
-  padding: 0 1rem;
+/* line 4, ../src/label.scss */
+.container span.label, .container small.label {
+  display: inline-block;
+  background-color: #00AAEE;
+  color: #fff;
+  border-radius: .2rem;
+  line-height: 1.42857143;
+  padding: .2rem .4rem;
+  vertical-align: baseline;
 }
-/* line 10, ../src/grid.scss */
-.container .row:before, .container .row:after {
-  clear: both;
-  content: "";
-  display: table;
+/* line 13, ../src/label.scss */
+.container span.label.label-success, .container small.label.label-success {
+  background: #32b643;
+  color: #fff;
 }
-
-@media (min-width: 768px) {
-  /* line 19, ../src/grid.scss */
-  .container {
-    max-width: 60rem;
-  }
+/* line 17, ../src/label.scss */
+.container span.label.label-warning, .container small.label.label-warning {
+  background: #ffb700;
+  color: #fff;
 }
-@media (min-width: 992px) {
-  /* line 24, ../src/grid.scss */
-  .container {
-    max-width: 98rem;
-  }
-}
-@media (min-width: 1200px) {
-  /* line 29, ../src/grid.scss */
-  .container {
-    max-width: 130rem;
-  }
-}
-/* line 33, ../src/grid.scss */
-.column {
-  padding: 0 .8rem;
-  max-width: 100%;
-}
-
-/* line 37, ../src/grid.scss */
-.col-12,
-.col-11,
-.col-10,
-.col-9,
-.col-8,
-.col-7,
-.col-6,
-.col-5,
-.col-4,
-.col-3,
-.col-2,
-.col-1 {
-  float: left;
-  min-height: 1px;
-}
-
-/* line 52, ../src/grid.scss */
-.col-12 {
-  width: 100%;
-}
-
-/* line 55, ../src/grid.scss */
-.col-11 {
-  width: 91.66666667%;
-}
-
-/* line 58, ../src/grid.scss */
-.col-10 {
-  width: 83.33333333%;
-}
-
-/* line 61, ../src/grid.scss */
-.col-9 {
-  width: 75%;
-}
-
-/* line 64, ../src/grid.scss */
-.col-8 {
-  width: 66.66666667%;
-}
-
-/* line 67, ../src/grid.scss */
-.col-7 {
-  width: 58.33333333%;
-}
-
-/* line 70, ../src/grid.scss */
-.col-6 {
-  width: 50%;
-}
-
-/* line 73, ../src/grid.scss */
-.col-5 {
-  width: 41.66666667%;
-}
-
-/* line 76, ../src/grid.scss */
-.col-4 {
-  width: 33.33333333%;
-}
-
-/* line 79, ../src/grid.scss */
-.col-3 {
-  width: 25%;
-}
-
-/* line 82, ../src/grid.scss */
-.col-2 {
-  width: 16.66666667%;
-}
-
-/* line 85, ../src/grid.scss */
-.col-1 {
-  width: 8.33333333%;
+/* line 21, ../src/label.scss */
+.container span.label.label-error, .container small.label.label-error {
+  background: #e85600;
+  color: #fff;
 }
