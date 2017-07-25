@@ -1,0 +1,58 @@
+@import "base";
+
+.container{
+  .form-group{
+    margin-bottom: .8rem;
+  }
+  .form-input{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    background-image: none;
+    border: .1rem solid #c4c9d3;
+    border-radius: .3rem;
+    color: #50596c;
+    display: block;
+    font-size: 1.4rem;
+    height: 3.2rem;
+    line-height: 2rem;
+    max-width: 100%;
+    outline: none;
+    padding: .5rem .8rem;
+    position: relative;
+    transition: all .2s ease;
+    width: 100%;
+  }
+  .form-input:focus{
+    border-color: rgba(0,170,238,.6);
+    box-shadow: 0 0 0 .2rem $fontActiveColor;
+  }
+  .form-input::-webkit-input-placeholder {
+    color: #acb3c2;
+  }
+  .form-input::-moz-placeholder {
+    color: #acb3c2;
+  }
+  .form-input:-ms-input-placeholder {
+    color: #acb3c2;
+  }
+  .form-input::placeholder {
+    color: #acb3c2;
+  }
+  .form-input.input-inline{
+    display: inline-block;
+    vertical-align: middle;
+    width: auto;
+  }
+  .form-input.is-error{
+    border-color: $errorColor;
+    box-shadow: none;
+    color: $errorColor;
+  }
+  .form-input.is-success{
+    border-color: $successColor;
+    box-shadow: none;
+    color: $successColor;
+  }
+}
