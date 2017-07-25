@@ -1119,34 +1119,38 @@ mark {
   box-shadow: 0 0 0 0.2rem #00AAEE;
 }
 /* line 31, ../src/form.scss */
+.container .form-input:hover {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+/* line 34, ../src/form.scss */
 .container .form-input::-webkit-input-placeholder {
   color: #acb3c2;
 }
-/* line 34, ../src/form.scss */
+/* line 37, ../src/form.scss */
 .container .form-input::-moz-placeholder {
   color: #acb3c2;
 }
-/* line 37, ../src/form.scss */
+/* line 40, ../src/form.scss */
 .container .form-input:-ms-input-placeholder {
   color: #acb3c2;
 }
-/* line 40, ../src/form.scss */
+/* line 43, ../src/form.scss */
 .container .form-input::placeholder {
   color: #acb3c2;
 }
-/* line 43, ../src/form.scss */
+/* line 46, ../src/form.scss */
 .container .form-input.input-inline {
   display: inline-block;
   vertical-align: middle;
   width: auto;
 }
-/* line 48, ../src/form.scss */
+/* line 51, ../src/form.scss */
 .container .form-input.is-error {
   border-color: #ED2F78;
   box-shadow: none;
   color: #ED2F78;
 }
-/* line 53, ../src/form.scss */
+/* line 56, ../src/form.scss */
 .container .form-input.is-success {
   border-color: #32b643;
   box-shadow: none;

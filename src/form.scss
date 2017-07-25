@@ -28,6 +28,9 @@
     border-color: rgba(0,170,238,.6);
     box-shadow: 0 0 0 .2rem $fontActiveColor;
   }
+  .form-input:hover{
+    border-color: rgba(0,0,0,.35);
+  }
   .form-input::-webkit-input-placeholder {
     color: #acb3c2;
   }
