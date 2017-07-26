@@ -1079,12 +1079,12 @@ mark {
 }
 /* line 17, ../src/label.scss */
 .container span.label.label-warning, .container small.label.label-warning {
-  background: #ffb700;
+  background: warningColor;
   color: #fff;
 }
 /* line 21, ../src/label.scss */
 .container span.label.label-error, .container small.label.label-error {
-  background: #e85600;
+  background: #ED2F78;
   color: #fff;
 }
 
@@ -1093,6 +1093,12 @@ mark {
   margin-bottom: .8rem;
 }
 /* line 7, ../src/form.scss */
+.container .form-label {
+  display: block;
+  padding: .6rem 0;
+  color: #333;
+}
+/* line 12, ../src/form.scss */
 .container .form-input {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1113,46 +1119,89 @@ mark {
   transition: all .2s ease;
   width: 100%;
 }
-/* line 27, ../src/form.scss */
+/* line 32, ../src/form.scss */
 .container .form-input:focus {
-  border-color: rgba(0, 170, 238, 0.6);
-  box-shadow: 0 0 0 0.2rem #00AAEE;
+  border-color: #00AAEE;
+  box-shadow: 0 0 0 0.2rem rgba(0, 186, 255, 0.75);
 }
-/* line 31, ../src/form.scss */
+/* line 36, ../src/form.scss */
 .container .form-input:hover {
-  border-color: rgba(0, 0, 0, 0.35);
+  border-color: #00AAEE;
 }
-/* line 34, ../src/form.scss */
+/* line 39, ../src/form.scss */
 .container .form-input::-webkit-input-placeholder {
   color: #acb3c2;
 }
-/* line 37, ../src/form.scss */
+/* line 42, ../src/form.scss */
 .container .form-input::-moz-placeholder {
   color: #acb3c2;
 }
-/* line 40, ../src/form.scss */
+/* line 45, ../src/form.scss */
 .container .form-input:-ms-input-placeholder {
   color: #acb3c2;
 }
-/* line 43, ../src/form.scss */
+/* line 48, ../src/form.scss */
 .container .form-input::placeholder {
   color: #acb3c2;
 }
-/* line 46, ../src/form.scss */
+/* line 51, ../src/form.scss */
 .container .form-input.input-inline {
   display: inline-block;
   vertical-align: middle;
   width: auto;
 }
-/* line 51, ../src/form.scss */
+/* line 56, ../src/form.scss */
 .container .form-input.is-error {
   border-color: #ED2F78;
   box-shadow: none;
   color: #ED2F78;
 }
-/* line 56, ../src/form.scss */
+/* line 61, ../src/form.scss */
 .container .form-input.is-success {
   border-color: #32b643;
   box-shadow: none;
   color: #32b643;
+}
+/* line 67, ../src/form.scss */
+.container label.form-radio {
+  display: inline-block;
+  line-height: 2rem;
+  position: relative;
+  padding: .2rem 2rem;
+}
+/* line 72, ../src/form.scss */
+.container label.form-radio .label-text {
+  display: inline-block;
+  position: absolute;
+  height: 1.4rem;
+  width: 1.4rem;
+  border-radius: .7rem;
+  background-color: #fff;
+  border: 0.1rem solid #50596c;
+  cursor: pointer;
+  top: .5rem;
+  left: 0;
+  transition: all .2s ease;
+}
+/* line 85, ../src/form.scss */
+.container label.form-radio input.form-radio {
+  clip: rect(0, 0, 0, 0);
+  width: .1rem;
+  height: .1rem;
+  overflow: hidden;
+  margin: -.1rem;
+  position: absolute;
+}
+/* line 93, ../src/form.scss */
+.container label.form-radio input.form-radio:checked + .label-text::before {
+  background-color: #fff;
+  border-radius: .2rem;
+  content: '';
+  height: .4rem;
+  left: 50%;
+  top: 50%;
+  margin-left: -.2rem;
+  margin-right: -.2rem;
+  position: absolute;
+  width: .4rem;
 }

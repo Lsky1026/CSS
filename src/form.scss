@@ -4,6 +4,11 @@
   .form-group{
     margin-bottom: .8rem;
   }
+  .form-label {
+    display: block;
+    padding: .6rem 0;
+    color: $fontBlackColor;
+  }
   .form-input{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -25,11 +30,11 @@
     width: 100%;
   }
   .form-input:focus{
-    border-color: rgba(0,170,238,.6);
-    box-shadow: 0 0 0 .2rem $fontActiveColor;
+    border-color: $fontActiveColor;
+    box-shadow: 0 0 0 .2rem $formBoxShadowColor;
   }
   .form-input:hover{
-    border-color: rgba(0,0,0,.35);
+    border-color: $fontActiveColor;
   }
   .form-input::-webkit-input-placeholder {
     color: #acb3c2;
@@ -58,4 +63,45 @@
     box-shadow: none;
     color: $successColor;
   }
+
+  label.form-radio{
+    display: inline-block;
+    line-height: 2rem;
+    position: relative;
+    padding: .2rem 2rem;
+    .label-text{
+      display: inline-block;
+      position: absolute;
+      height: 1.4rem;
+      width: 1.4rem;
+      border-radius: .7rem;
+      background-color: $backgroundWhiteColor;
+      border: .1rem solid $fontMarkColor;
+      cursor: pointer;
+      top: .5rem;
+      left: 0;
+      transition: all .2s ease;
+    }
+    input.form-radio{
+      clip: rect(0,0,0,0);
+      width: .1rem;
+      height: .1rem;
+      overflow: hidden;
+      margin: -.1rem;
+      position: absolute;
+    }
+    input.form-radio:checked + .label-text::before{
+      background-color: $backgroundWhiteColor;
+      border-radius: .2rem;
+      content: '';
+      height: .4rem;
+      left: 50%;
+      top: 50%;
+      margin-left: -.2rem;
+      margin-right: -.2rem;
+      position: absolute;
+      width: .4rem;
+    }
+  }
+
 }

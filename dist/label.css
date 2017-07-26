@@ -810,11 +810,11 @@ mark {
 }
 /* line 17, ../src/label.scss */
 .container span.label.label-warning, .container small.label.label-warning {
-  background: #ffb700;
+  background: warningColor;
   color: #fff;
 }
 /* line 21, ../src/label.scss */
 .container span.label.label-error, .container small.label.label-error {
-  background: #e85600;
+  background: #ED2F78;
   color: #fff;
 }

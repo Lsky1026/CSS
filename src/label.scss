@@ -11,16 +11,16 @@
     vertical-align: baseline;
   }
   span.label.label-success,small.label.label-success{
-    background: #32b643;
-    color: #fff;
+    background: $successColor;
+    color: $fontWhiteColor;
   }
   span.label.label-warning,small.label.label-warning{
-    background: #ffb700;
-    color: #fff;
+    background: warningColor;
+    color: $fontWhiteColor;
   }
   span.label.label-error,small.label.label-error{
-    background: #e85600;
-    color: #fff;
+    background: $errorColor;
+    color: $fontWhiteColor;
   }
 }
 
