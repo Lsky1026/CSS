@@ -1173,13 +1173,13 @@ mark {
 .container label.form-radio .label-text {
   display: inline-block;
   position: absolute;
-  height: 1.4rem;
-  width: 1.4rem;
-  border-radius: .7rem;
+  height: 1.2rem;
+  width: 1.2rem;
+  border-radius: .6rem;
   background-color: #fff;
   border: 0.1rem solid #50596c;
   cursor: pointer;
-  top: .5rem;
+  top: .6rem;
   left: 0;
   transition: all .2s ease;
 }
@@ -1194,14 +1194,18 @@ mark {
 }
 /* line 93, ../src/form.scss */
 .container label.form-radio input.form-radio:checked + .label-text::before {
-  background-color: #fff;
-  border-radius: .2rem;
+  background-color: #ff7800;
+  border-radius: .4rem;
   content: '';
-  height: .4rem;
+  height: .8rem;
   left: 50%;
-  top: 50%;
-  margin-left: -.2rem;
-  margin-right: -.2rem;
+  top: .1rem;
+  margin-left: -.4rem;
+  margin-right: -.4rem;
   position: absolute;
-  width: .4rem;
+  width: .8rem;
+}
+/* line 105, ../src/form.scss */
+.container label.form-radio input.form-radio:checked + .label-text {
+  border-color: #00AAEE;
 }
