@@ -31,7 +31,7 @@
   }
   .form-input:focus{
     border-color: $fontActiveColor;
-    box-shadow: 0 0 0 .2rem $formBoxShadowColor;
+    box-shadow: 0 0 0 .1rem $formBoxShadowColor;
   }
   .form-input:hover{
     border-color: $fontActiveColor;
@@ -53,12 +53,12 @@
     vertical-align: middle;
     width: auto;
   }
-  .form-input.is-error{
+  .form-input.is-error,.form-select.is-error{
     border-color: $errorColor;
     box-shadow: none;
     color: $errorColor;
   }
-  .form-input.is-success{
+  .form-input.is-success,.form-select.is-success{
     border-color: $successColor;
     box-shadow: none;
     color: $successColor;
@@ -104,6 +104,115 @@
     }
     input.form-radio:checked + .label-text{
       border-color: $fontActiveColor;
+    }
+    input.form-radio:focus + .label-text{
+      box-shadow: 0 0 0 .05rem $formBoxShadowColor;
+    }
+  }
+
+  .form-select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: .1rem solid #c4c9d3;
+    border-radius: .2rem;
+    color: inherit;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    outline: none;
+    padding: .5rem .8rem;
+    vertical-align: middle;
+    width: 100%;
+    background-color: $backgroundWhiteColor;
+    &[multiple] option{
+      padding: .2rem .4rem;
+    }
+    &:not([multiple]){
+      height: 3.0rem;
+      padding-right: 2.4rem;
+    }
+    &:focus{
+      border-color: $fontActiveColor;
+      box-shadow: 0 0 0 .1rem $formBoxShadowColor;
+    }
+  }
+
+  .form-switch{
+    display: inline-block;
+    line-height: 2rem;
+    position: relative;
+    padding: .2rem 2rem .2rem 3rem;
+    input.form-checkbox{
+      clip: rect(0,0,0,0);
+      width: .1rem;
+      height: .1rem;
+      overflow: hidden;
+      margin: -.1rem;
+      position: absolute;
+    }
+    .label-text{
+      background-color: $productBackgroundColor;
+      background-clip: padding-box;
+      border: .05rem solid $inputBottomColor;
+      cursor: pointer;
+      display: inline-block;
+      position: absolute;
+      width: 2.8rem;
+      height: 1.4rem;
+      border-radius: .7rem;
+      top: .5rem;
+      left: .1rem;
+      line-height: 1.8rem;
+    }
+    .label-text::before{
+      position: absolute;
+      width: 1.4rem;
+      height: 1.4rem;
+      border-radius: .7rem;
+      background-color: $backgroundWhiteColor;
+      top: -.025rem;
+      left: 0;
+      content: '';
+      transition: all .15s ease;
+    }
+    .form-checkbox:checked + .label-text{
+      background-color: $fontActiveColor;
+    }
+    .form-checkbox:checked + .label-text::before{
+      left: 1.25rem;
+    }
+  }
+
+  .form-check{
+    display: inline-block;
+    line-height: 2rem;
+    position: relative;
+    padding: .2rem 2rem .2rem 2rem;
+    input.form-checkbox{
+      clip: rect(0,0,0,0);
+      width: .1rem;
+      height: .1rem;
+      margin: .1rem;
+      overflow: hidden;
+      position: absolute;
+    }
+    .label-text{
+      position: absolute;
+      left: .4rem;
+      top: .6rem;
+      display: inline-block;
+      width: 1.2rem;
+      height: 1.2rem;
+      border-radius: .3rem;
+      border: .05rem solid $fontMarkColor;
+      transition: all .2s ease;
+    }
+    input.form-checkbox:checked + .label-text{
+      background-color: $fontActiveColor;
+      border-color: #0096d2;
+    }
+    .form-checkbox:checked + .label-text::before{
+
     }
   }
 

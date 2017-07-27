@@ -827,7 +827,7 @@ mark {
 /* line 32, ../src/form.scss */
 .container .form-input:focus {
   border-color: #00AAEE;
-  box-shadow: 0 0 0 0.2rem rgba(0, 186, 255, 0.75);
+  box-shadow: 0 0 0 0.1rem rgba(0, 186, 255, 0.75);
 }
 /* line 36, ../src/form.scss */
 .container .form-input:hover {
@@ -856,13 +856,13 @@ mark {
   width: auto;
 }
 /* line 56, ../src/form.scss */
-.container .form-input.is-error {
+.container .form-input.is-error, .container .form-select.is-error {
   border-color: #ED2F78;
   box-shadow: none;
   color: #ED2F78;
 }
 /* line 61, ../src/form.scss */
-.container .form-input.is-success {
+.container .form-input.is-success, .container .form-select.is-success {
   border-color: #32b643;
   box-shadow: none;
   color: #32b643;
@@ -913,4 +913,122 @@ mark {
 /* line 105, ../src/form.scss */
 .container label.form-radio input.form-radio:checked + .label-text {
   border-color: #00AAEE;
+}
+/* line 108, ../src/form.scss */
+.container label.form-radio input.form-radio:focus + .label-text {
+  box-shadow: 0 0 0 0.05rem rgba(0, 186, 255, 0.75);
+}
+/* line 113, ../src/form.scss */
+.container .form-select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: .1rem solid #c4c9d3;
+  border-radius: .2rem;
+  color: inherit;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  outline: none;
+  padding: .5rem .8rem;
+  vertical-align: middle;
+  width: 100%;
+  background-color: #fff;
+}
+/* line 127, ../src/form.scss */
+.container .form-select[multiple] option {
+  padding: .2rem .4rem;
+}
+/* line 130, ../src/form.scss */
+.container .form-select:not([multiple]) {
+  height: 3.0rem;
+  padding-right: 2.4rem;
+}
+/* line 134, ../src/form.scss */
+.container .form-select:focus {
+  border-color: #00AAEE;
+  box-shadow: 0 0 0 0.1rem rgba(0, 186, 255, 0.75);
+}
+/* line 140, ../src/form.scss */
+.container .form-switch {
+  display: inline-block;
+  line-height: 2rem;
+  position: relative;
+  padding: .2rem 2rem .2rem 3rem;
+}
+/* line 145, ../src/form.scss */
+.container .form-switch input.form-checkbox {
+  clip: rect(0, 0, 0, 0);
+  width: .1rem;
+  height: .1rem;
+  overflow: hidden;
+  margin: -.1rem;
+  position: absolute;
+}
+/* line 153, ../src/form.scss */
+.container .form-switch .label-text {
+  background-color: #b7b7b7;
+  background-clip: padding-box;
+  border: 0.05rem solid #e0e0e0;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  width: 2.8rem;
+  height: 1.4rem;
+  border-radius: .7rem;
+  top: .5rem;
+  left: .1rem;
+  line-height: 1.8rem;
+}
+/* line 167, ../src/form.scss */
+.container .form-switch .label-text::before {
+  position: absolute;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: .7rem;
+  background-color: #fff;
+  top: -.025rem;
+  left: 0;
+  content: '';
+  transition: all .15s ease;
+}
+/* line 178, ../src/form.scss */
+.container .form-switch .form-checkbox:checked + .label-text {
+  background-color: #00AAEE;
+}
+/* line 181, ../src/form.scss */
+.container .form-switch .form-checkbox:checked + .label-text::before {
+  left: 1.25rem;
+}
+/* line 186, ../src/form.scss */
+.container .form-check {
+  display: inline-block;
+  line-height: 2rem;
+  position: relative;
+  padding: .2rem 2rem .2rem 2rem;
+}
+/* line 191, ../src/form.scss */
+.container .form-check input.form-checkbox {
+  clip: rect(0, 0, 0, 0);
+  width: .1rem;
+  height: .1rem;
+  margin: .1rem;
+  overflow: hidden;
+  position: absolute;
+}
+/* line 199, ../src/form.scss */
+.container .form-check .label-text {
+  position: absolute;
+  left: .4rem;
+  top: .6rem;
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: .3rem;
+  border: 0.05rem solid #50596c;
+  transition: all .2s ease;
+}
+/* line 210, ../src/form.scss */
+.container .form-check input.form-checkbox:checked + .label-text {
+  background-color: #00AAEE;
+  border-color: #0096d2;
 }
