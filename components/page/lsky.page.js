@@ -108,6 +108,8 @@
                 });
                 opts.containerBox.on("click",".lsky-page-jump",function () {
                     var _index = opts.containerBox.find(".lsky-page-input").val();
+                    var _r = /^\+?[1-9][0-9]*$/;
+                    if(!_r.test(_index) && (Number(_index) <= opts.totalPage)){ return; }
                     opts.currentIndex = _index;
                     method.render();
                     opts.backFun(_index);
