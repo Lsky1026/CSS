@@ -1109,8 +1109,8 @@ mark {
   border-radius: .3rem;
   color: #50596c;
   display: block;
-  font-size: 1.4rem;
-  height: 3.2rem;
+  font-size: 1.2rem;
+  height: 2.6rem;
   line-height: 2rem;
   max-width: 100%;
   outline: none;
@@ -1281,7 +1281,7 @@ mark {
   height: 1.4rem;
   border-radius: .7rem;
   background-color: #fff;
-  top: -.025rem;
+  top: -0.06rem;
   left: 0;
   content: '';
   transition: all .15s ease;
@@ -1326,4 +1326,8 @@ mark {
 .container .form-check input.form-checkbox:checked + .label-text {
   background-color: #00AAEE;
   border-color: #0096d2;
+}
+/* line 214, ../src/form.scss */
+.container .form-check .form-checkbox:checked + .label-text::before {
+  content: "";
 }
