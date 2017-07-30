@@ -207,13 +207,6 @@
       border: .05rem solid $fontMarkColor;
       transition: all .2s ease;
     }
-    input.form-checkbox:checked + .label-text{
-      background-color: $fontActiveColor;
-      border-color: #0096d2;
-    }
-    .form-checkbox:checked + .label-text::before{
-      content: "";
-    }
   }
 
 }

@@ -1322,12 +1322,3 @@ mark {
   border: 0.05rem solid #50596c;
   transition: all .2s ease;
 }
-/* line 210, ../src/form.scss */
-.container .form-check input.form-checkbox:checked + .label-text {
-  background-color: #00AAEE;
-  border-color: #0096d2;
-}
-/* line 214, ../src/form.scss */
-.container .form-check .form-checkbox:checked + .label-text::before {
-  content: "";
-}
