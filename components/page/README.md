@@ -13,8 +13,10 @@
 
 #### 使用方法
   插件地址：
+  
     压缩版："https://github.com/Lsky1026/CSS/tree/master/compress/js/lsky.page.js"
-    源码："https://github.com/Lsky1026/CSS/blob/master/components/page/lsky.page.js" 
+    
+    源码："https://github.com/Lsky1026/CSS/blob/master/components/page/lsky.page.js" 
   
 配置方法：
 * 首先页面中声明一个容器`<div class="footer-page"></div>`
