@@ -50,11 +50,13 @@
                     method.abc("a",opts.startStr,opts.firstPage,(opts.currentIndex == 1 ? "page-start disabled" : "page-start"))
                 }
                 method.abc("a",opts.prev,opts.currentIndex - 1,(opts.currentIndex <= 1 ? "page-prev disabled" : "page-prev"));
-                if(opts.totalPage <= 5){
+                if(opts.totalPage < 1){
+                    return false;
+                }else if(opts.totalPage <= 5){
                     method.bcd(1,opts.totalPage);
-                    method.abc("a",opts.next,Number(opts.currentIndex) + 1,"page-next");
+                    method.abc("a",opts.next,Number(opts.currentIndex) + 1,(opts.currentIndex >= opts.totalPage ? "page-next disabled" : "page-next"));
                     return;
-                }else {
+                }else{
                     if (opts.currentIndex <= 4) {
                         method.bcd(1, 5);
                         method.abc("span", "...", "", "page-interval");
