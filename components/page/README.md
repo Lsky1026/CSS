@@ -1,31 +1,34 @@
 ### 分页插件
-    该插件是我利用空闲时间完成的一个功能比较完善的分页模块。
-    
+  该插件是我利用空闲时间完成的一个功能比较完善的分页模块。
+  
 
 #### 功能介绍
 该插件有三种模式可供选择:
 - 默认模式 “default”：默认模式下，插件只提供分页显示和上下页。
+  ![示例样式下“default”模式](https://github.com/Lsky1026/CSS/blob/master/components/page/default.png)
 - 跳页模式“jump”：该模式提供默认模式下的所有功能以外，添加了总页数显示，当前页和跳页。
+  ![示例样式下“jump”模式](https://github.com/Lsky1026/CSS/blob/master/components/page/jump.png)
 - 完整模式“detail”：完整模式提供了插件的所有功能，包括：分页、上下页、首尾页、总页数当前页和跳页。
+  ![示例样式下“detail”模式](https://github.com/Lsky1026/CSS/blob/master/components/page/detail.png)
 
 #### 使用方法
-    插件地址：
-      压缩版："https://github.com/Lsky1026/CSS/tree/master/compress/js/lsky.page.js"
-      源码："https://github.com/Lsky1026/CSS/blob/master/components/page/lsky.page.js" 
-    
+  插件地址：
+    压缩版："https://github.com/Lsky1026/CSS/tree/master/compress/js/lsky.page.js"
+    源码："https://github.com/Lsky1026/CSS/blob/master/components/page/lsky.page.js" 
+  
 配置方法：
 * 首先页面中声明一个容器`<div class="footer-page"></div>`
 * 其次配置参数
 ``` javascript
 $(".footer-page").lsky({
-    totalPage: pages,  //总页数
-    mode: "default",   //模式选择，默认default
-    currentIndex: 1,    //默认显示第一页
-    prev: "<",    //可自定义上下页标示，默认"<"和">"
-    next: ">",
-    backFun: function(index){
-        //回调函数，将会返回当前点击的页码。
-    }
+  totalPage: pages,  //总页数
+  mode: "default",   //模式选择，默认default
+  currentIndex: 1,    //默认显示第一页
+  prev: "<",    //可自定义上下页标示，默认"<"和">"
+  next: ">",
+  backFun: function(index){
+    //回调函数，将会返回当前点击的页码。
+  }
 })
 ```
 
